@@ -1,0 +1,31 @@
+[gd_scene load_steps=8 format=3 uid="uid://jl8fp4t8nxcr"]
+
+[ext_resource type="PackedScene" uid="uid://dixg104i7wd64" path="res://Assets/Models/Dungeon/gltf/floor_tile_small.gltf.glb" id="1_jlijx"]
+[ext_resource type="PackedScene" uid="uid://bxjo4mfc4xoyf" path="res://Assets/Models/Dungeon/gltf/wall.gltf.glb" id="2_2pcmj"]
+[ext_resource type="PackedScene" uid="uid://dvgnhp78vrmhq" path="res://Assets/Models/Dungeon/gltf/stairs_wood_decorated.gltf.glb" id="3_32pif"]
+[ext_resource type="PackedScene" uid="uid://b0oxs3fx052q0" path="res://Assets/Models/Dungeon/gltf/wall_corner.gltf.glb" id="4_1l8e4"]
+[ext_resource type="PackedScene" uid="uid://vqnvkq73ephf" path="res://Assets/Models/Dungeon/gltf/wall_Tsplit.gltf.glb" id="5_yx3ql"]
+[ext_resource type="PackedScene" uid="uid://qwxwh41n426v" path="res://Assets/Models/Dungeon/gltf/wall_open_scaffold.gltf.glb" id="6_du7xo"]
+[ext_resource type="PackedScene" uid="uid://dhnbycwx2sgkj" path="res://Assets/Models/Dungeon/gltf/wall_doorway_scaffold.glb" id="7_bvbye"]
+
+[node name="Tiles" type="Node3D"]
+
+[node name="floor_tile_small_gltf" parent="." instance=ExtResource("1_jlijx")]
+
+[node name="wall_gltf" parent="." instance=ExtResource("2_2pcmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11726, 0, -1.77922)
+
+[node name="stairs_wood_decorated_gltf" parent="." instance=ExtResource("3_32pif")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.05746, 0, -4.76113)
+
+[node name="wall_corner_gltf" parent="." instance=ExtResource("4_1l8e4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.05366, 0, -1.16815)
+
+[node name="wall_Tsplit_gltf" parent="." instance=ExtResource("5_yx3ql")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.2213, 0, -1.98565)
+
+[node name="wall_open_scaffold_gltf" parent="." instance=ExtResource("6_du7xo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5498, 0, -0.986343)
+
+[node name="wall_doorway_scaffold2" parent="." instance=ExtResource("7_bvbye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9288, 0, -1.43764)
