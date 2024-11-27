@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=3 uid="uid://q6t4wrqrmalb"]
+[gd_scene load_steps=48 format=3 uid="uid://q6t4wrqrmalb"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_idley"]
 [ext_resource type="Texture2D" uid="uid://cdm02p4hqns34" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_rnhfj"]
@@ -42,6 +42,22 @@
 [ext_resource type="Texture2D" uid="uid://nc0cgtbyo4rf" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_005.png" id="37_uuw1u"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerDashState.cs" id="40_3q4vw"]
 
+[sub_resource type="Animation" id="Animation_2lkr8"]
+resource_name = "Dash"
+step = 0.166667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.166667, 0.331948, 0.5, 0.666667, 0.833333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("32_cl0m4"), ExtResource("33_dwiwt"), ExtResource("34_1tvoa"), ExtResource("35_ijomv"), ExtResource("36_1oouq"), ExtResource("37_uuw1u")]
+}
+
 [sub_resource type="Animation" id="Animation_t8iu4"]
 resource_name = "Idle"
 loop_mode = 1
@@ -57,21 +73,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 1,
 "values": [ExtResource("1_rnhfj"), ExtResource("2_aown5"), ExtResource("3_cfp18"), ExtResource("4_su25r"), ExtResource("5_6a4a3"), ExtResource("6_w5vc5"), ExtResource("7_uw0nq"), ExtResource("8_3f1wp"), ExtResource("9_pxofy"), ExtResource("10_uowxh"), ExtResource("11_133cn"), ExtResource("12_l2d2c"), ExtResource("13_tnrtm"), ExtResource("14_soj40"), ExtResource("15_eur87"), ExtResource("16_g56ye"), ExtResource("17_f3da4"), ExtResource("18_opd8w")]
-}
-
-[sub_resource type="Animation" id="Animation_k50hc"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite3D:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("1_rnhfj")]
 }
 
 [sub_resource type="Animation" id="Animation_7mn40"]
@@ -91,9 +92,8 @@ tracks/0/keys = {
 "values": [ExtResource("19_ckl5p"), ExtResource("20_qsdob"), ExtResource("21_yp0cn"), ExtResource("22_24iye"), ExtResource("23_amp0f"), ExtResource("24_dbc8x"), ExtResource("25_40c3t"), ExtResource("26_3u4lp"), ExtResource("27_6t8no"), ExtResource("28_amt6s"), ExtResource("29_5tp8i"), ExtResource("30_ia8li")]
 }
 
-[sub_resource type="Animation" id="Animation_2lkr8"]
-resource_name = "Dash"
-step = 0.166667
+[sub_resource type="Animation" id="Animation_k50hc"]
+length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -101,10 +101,10 @@ tracks/0/path = NodePath("Sprite3D:texture")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.166667, 0.331948, 0.5, 0.666667, 0.833333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("32_cl0m4"), ExtResource("33_dwiwt"), ExtResource("34_1tvoa"), ExtResource("35_ijomv"), ExtResource("36_1oouq"), ExtResource("37_uuw1u")]
+"values": [ExtResource("1_rnhfj")]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b58y6"]
@@ -115,13 +115,21 @@ _data = {
 "RESET": SubResource("Animation_k50hc")
 }
 
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_q0xpo"]
+radius = 0.392789
+height = 1.38811
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayerNode", "Sprite3DNode", "StateMachineNode")]
+collision_layer = 2
+floor_max_angle = 1.55334
+floor_snap_length = 0.2
 script = ExtResource("1_idley")
 AnimationPlayerNode = NodePath("AnimationPlayer")
 Sprite3DNode = NodePath("Sprite3D")
 StateMachineNode = NodePath("StateMachine")
 
 [node name="Sprite3D" type="Sprite3D" parent="."]
+pixel_size = 0.0025
 texture_filter = 0
 texture = ExtResource("1_rnhfj")
 
@@ -148,3 +156,7 @@ dashTimerNode = NodePath("Timer")
 [node name="Timer" type="Timer" parent="StateMachine/DashState"]
 wait_time = 0.4
 one_shot = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0774847, 0)
+shape = SubResource("CapsuleShape3D_q0xpo")

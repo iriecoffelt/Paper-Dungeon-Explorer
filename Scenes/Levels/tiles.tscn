@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://jl8fp4t8nxcr"]
+[gd_scene load_steps=19 format=3 uid="uid://jl8fp4t8nxcr"]
 
 [ext_resource type="PackedScene" uid="uid://dixg104i7wd64" path="res://Assets/Models/Dungeon/gltf/floor_tile_small.gltf.glb" id="1_jlijx"]
 [ext_resource type="PackedScene" uid="uid://bxjo4mfc4xoyf" path="res://Assets/Models/Dungeon/gltf/wall.gltf.glb" id="2_2pcmj"]
@@ -7,10 +7,22 @@
 [ext_resource type="PackedScene" uid="uid://vqnvkq73ephf" path="res://Assets/Models/Dungeon/gltf/wall_Tsplit.gltf.glb" id="5_yx3ql"]
 [ext_resource type="PackedScene" uid="uid://qwxwh41n426v" path="res://Assets/Models/Dungeon/gltf/wall_open_scaffold.gltf.glb" id="6_du7xo"]
 [ext_resource type="PackedScene" uid="uid://dhnbycwx2sgkj" path="res://Assets/Models/Dungeon/gltf/wall_doorway_scaffold.glb" id="7_bvbye"]
+[ext_resource type="PackedScene" uid="uid://deulj3ag41clj" path="res://Assets/Models/Dungeon/gltf/barrier_half.gltf.glb" id="8_oa2m3"]
+[ext_resource type="PackedScene" uid="uid://dbmdrih47flmb" path="res://Assets/Models/Dungeon/gltf/wall_half_endcap.gltf.glb" id="9_7k5iy"]
+[ext_resource type="PackedScene" uid="uid://djd2b2doy8a1k" path="res://Assets/Models/Dungeon/gltf/wall_half.gltf.glb" id="10_u1l8j"]
+[ext_resource type="PackedScene" uid="uid://dbo7oep5c7rkq" path="res://Assets/Models/Dungeon/gltf/wall_window_open_scaffold.gltf.glb" id="11_ks0jx"]
+[ext_resource type="PackedScene" uid="uid://wrjogu5tgf1x" path="res://Assets/Models/Dungeon/gltf/wall_half_endcap_sloped.gltf.glb" id="12_eitkh"]
+[ext_resource type="PackedScene" uid="uid://c4k6fgfbqtjfo" path="res://Assets/Models/Dungeon/gltf/crates_stacked.gltf.glb" id="13_m2lyt"]
+[ext_resource type="PackedScene" uid="uid://cxwaxxorgs48a" path="res://Assets/Models/Dungeon/gltf/barrier.gltf.glb" id="14_tbmyi"]
+[ext_resource type="PackedScene" uid="uid://c3fwpv02icqej" path="res://Assets/Models/Dungeon/gltf/box_stacked.gltf.glb" id="15_0n3ux"]
+[ext_resource type="PackedScene" uid="uid://cok7t4ek2a4e2" path="res://Assets/Models/Dungeon/gltf/barrier_colum_half.gltf.glb" id="16_5codl"]
+[ext_resource type="PackedScene" uid="uid://db3kaco82p4c4" path="res://Assets/Models/Dungeon/gltf/barrier_column.gltf.glb" id="17_qyh0m"]
+[ext_resource type="PackedScene" uid="uid://cvvyt5or744u8" path="res://Assets/Models/Dungeon/gltf/barrier_corner.gltf.glb" id="18_1jfan"]
 
 [node name="Tiles" type="Node3D"]
 
 [node name="floor_tile_small_gltf" parent="." instance=ExtResource("1_jlijx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.54638, 0, 0)
 
 [node name="wall_gltf" parent="." instance=ExtResource("2_2pcmj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11726, 0, -1.77922)
@@ -29,3 +41,34 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5498, 0, -0.986343)
 
 [node name="wall_doorway_scaffold2" parent="." instance=ExtResource("7_bvbye")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.9288, 0, -1.43764)
+
+[node name="barrier_half_gltf" parent="." instance=ExtResource("8_oa2m3")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.25769, 0, 2.85593)
+
+[node name="wall_half_endcap_gltf" parent="." instance=ExtResource("9_7k5iy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.96702, 0, 3.2159)
+
+[node name="wall_half_gltf" parent="." instance=ExtResource("10_u1l8j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.04669, 0, 2.85593)
+
+[node name="wall_window_open_scaffold_gltf" parent="." instance=ExtResource("11_ks0jx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.40201, 0, 3.94341)
+
+[node name="wall_half_endcap_sloped_gltf" parent="." instance=ExtResource("12_eitkh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.40201, 0, 3.94341)
+
+[node name="crates_stacked_gltf" parent="." instance=ExtResource("13_m2lyt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1926, 0, 4.15083)
+
+[node name="barrier_gltf" parent="." instance=ExtResource("14_tbmyi")]
+
+[node name="box_stacked_gltf" parent="." instance=ExtResource("15_0n3ux")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.77565, 0, 3.81587)
+
+[node name="barrier_colum_half_gltf" parent="." instance=ExtResource("16_5codl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.43796, 0, 5.01289)
+
+[node name="barrier_column_gltf" parent="." instance=ExtResource("17_qyh0m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.28585, 0, 0)
+
+[node name="barrier_corner_gltf" parent="." instance=ExtResource("18_1jfan")]
