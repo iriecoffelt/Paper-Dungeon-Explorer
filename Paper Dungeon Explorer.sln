@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Paper Dungeon Explorer", "Paper Dungeon Explorer.csproj", "{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{BFF8646C-3C75-47D1-A16F-E1DD0067A9A4}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
