@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bla3fnn5bee63"
 path.s3tc="res://.godot/imported/wall_half_endcap_sloped_dungeon_texture.png-c1795e3304fa339296543ea3b6f0ad98.s3tc.ctex"
+path.etc2="res://.godot/imported/wall_half_endcap_sloped_dungeon_texture.png-c1795e3304fa339296543ea3b6f0ad98.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/wall_half_endcap_sloped_dungeon_texture.png"
-dest_files=["res://.godot/imported/wall_half_endcap_sloped_dungeon_texture.png-c1795e3304fa339296543ea3b6f0ad98.s3tc.ctex"]
+dest_files=["res://.godot/imported/wall_half_endcap_sloped_dungeon_texture.png-c1795e3304fa339296543ea3b6f0ad98.s3tc.ctex", "res://.godot/imported/wall_half_endcap_sloped_dungeon_texture.png-c1795e3304fa339296543ea3b6f0ad98.etc2.ctex"]
 
 [params]
 

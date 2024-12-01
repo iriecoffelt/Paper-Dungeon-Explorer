@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqky3b1ll4s8w"
 path.s3tc="res://.godot/imported/floor_foundation_front_and_back_dungeon_texture.png-1c1e1c5ae7a8971ca854f70f43975bea.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_foundation_front_and_back_dungeon_texture.png-1c1e1c5ae7a8971ca854f70f43975bea.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/floor_foundation_front_and_back_dungeon_texture.png"
-dest_files=["res://.godot/imported/floor_foundation_front_and_back_dungeon_texture.png-1c1e1c5ae7a8971ca854f70f43975bea.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_foundation_front_and_back_dungeon_texture.png-1c1e1c5ae7a8971ca854f70f43975bea.s3tc.ctex", "res://.godot/imported/floor_foundation_front_and_back_dungeon_texture.png-1c1e1c5ae7a8971ca854f70f43975bea.etc2.ctex"]
 
 [params]
 

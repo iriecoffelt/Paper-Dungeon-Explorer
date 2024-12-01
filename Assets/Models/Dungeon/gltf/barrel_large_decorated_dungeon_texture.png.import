@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://ct0sxq3lg41rd"
 path.s3tc="res://.godot/imported/barrel_large_decorated_dungeon_texture.png-b79b7315029dbd9c968719589e06a0bd.s3tc.ctex"
+path.etc2="res://.godot/imported/barrel_large_decorated_dungeon_texture.png-b79b7315029dbd9c968719589e06a0bd.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/barrel_large_decorated_dungeon_texture.png"
-dest_files=["res://.godot/imported/barrel_large_decorated_dungeon_texture.png-b79b7315029dbd9c968719589e06a0bd.s3tc.ctex"]
+dest_files=["res://.godot/imported/barrel_large_decorated_dungeon_texture.png-b79b7315029dbd9c968719589e06a0bd.s3tc.ctex", "res://.godot/imported/barrel_large_decorated_dungeon_texture.png-b79b7315029dbd9c968719589e06a0bd.etc2.ctex"]
 
 [params]
 

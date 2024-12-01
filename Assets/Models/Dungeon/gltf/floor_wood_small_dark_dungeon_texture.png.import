@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfhj1vip8fm4g"
 path.s3tc="res://.godot/imported/floor_wood_small_dark_dungeon_texture.png-3bb97cd107fbebc5d8e8e787de5f1ab9.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_wood_small_dark_dungeon_texture.png-3bb97cd107fbebc5d8e8e787de5f1ab9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/floor_wood_small_dark_dungeon_texture.png"
-dest_files=["res://.godot/imported/floor_wood_small_dark_dungeon_texture.png-3bb97cd107fbebc5d8e8e787de5f1ab9.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_wood_small_dark_dungeon_texture.png-3bb97cd107fbebc5d8e8e787de5f1ab9.s3tc.ctex", "res://.godot/imported/floor_wood_small_dark_dungeon_texture.png-3bb97cd107fbebc5d8e8e787de5f1ab9.etc2.ctex"]
 
 [params]
 

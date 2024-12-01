@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cobw8c42lknph"
 path.s3tc="res://.godot/imported/sword_shield_dungeon_texture.png-50f707fd0d249833c61d54778a9661f4.s3tc.ctex"
+path.etc2="res://.godot/imported/sword_shield_dungeon_texture.png-50f707fd0d249833c61d54778a9661f4.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/sword_shield_dungeon_texture.png"
-dest_files=["res://.godot/imported/sword_shield_dungeon_texture.png-50f707fd0d249833c61d54778a9661f4.s3tc.ctex"]
+dest_files=["res://.godot/imported/sword_shield_dungeon_texture.png-50f707fd0d249833c61d54778a9661f4.s3tc.ctex", "res://.godot/imported/sword_shield_dungeon_texture.png-50f707fd0d249833c61d54778a9661f4.etc2.ctex"]
 
 [params]
 
