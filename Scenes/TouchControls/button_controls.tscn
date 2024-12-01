@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://dxigh1emcb4m"]
+
+[ext_resource type="Texture2D" uid="uid://bx2qgsodh8u6k" path="res://Assets/Sprites/Characters/Player/Slashing/Slashing_007.png" id="1_ms6x2"]
+[ext_resource type="Texture2D" uid="uid://ufhumg6un1r0" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_004.png" id="2_55qm8"]
+
+[node name="ButtonControls" type="CanvasLayer"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Attack" type="TouchScreenButton" parent="Control"]
+position = Vector2(-293, -117)
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("1_ms6x2")
+action = "Attack"
+
+[node name="Dash" type="TouchScreenButton" parent="Control"]
+position = Vector2(-118, -117)
+scale = Vector2(0.15, 0.15)
+texture_normal = ExtResource("2_55qm8")
+action = "Dash"

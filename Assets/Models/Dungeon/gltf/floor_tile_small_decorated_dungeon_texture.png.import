@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xrr6x3euwb11"
 path.s3tc="res://.godot/imported/floor_tile_small_decorated_dungeon_texture.png-2672cce1dfee156bf8a31bd7a6a56482.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_tile_small_decorated_dungeon_texture.png-2672cce1dfee156bf8a31bd7a6a56482.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/floor_tile_small_decorated_dungeon_texture.png"
-dest_files=["res://.godot/imported/floor_tile_small_decorated_dungeon_texture.png-2672cce1dfee156bf8a31bd7a6a56482.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_tile_small_decorated_dungeon_texture.png-2672cce1dfee156bf8a31bd7a6a56482.s3tc.ctex", "res://.godot/imported/floor_tile_small_decorated_dungeon_texture.png-2672cce1dfee156bf8a31bd7a6a56482.etc2.ctex"]
 
 [params]
 

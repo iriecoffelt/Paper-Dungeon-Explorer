@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://2evfetcqxkxo"
 path.s3tc="res://.godot/imported/banner_patternA_blue_dungeon_texture.png-b9078e7e6eabe25e36256d15b92559bf.s3tc.ctex"
+path.etc2="res://.godot/imported/banner_patternA_blue_dungeon_texture.png-b9078e7e6eabe25e36256d15b92559bf.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/banner_patternA_blue_dungeon_texture.png"
-dest_files=["res://.godot/imported/banner_patternA_blue_dungeon_texture.png-b9078e7e6eabe25e36256d15b92559bf.s3tc.ctex"]
+dest_files=["res://.godot/imported/banner_patternA_blue_dungeon_texture.png-b9078e7e6eabe25e36256d15b92559bf.s3tc.ctex", "res://.godot/imported/banner_patternA_blue_dungeon_texture.png-b9078e7e6eabe25e36256d15b92559bf.etc2.ctex"]
 
 [params]
 

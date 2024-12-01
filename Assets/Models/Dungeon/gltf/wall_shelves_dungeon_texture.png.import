@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwlb1qyqdhoyt"
 path.s3tc="res://.godot/imported/wall_shelves_dungeon_texture.png-bda82757d5bc815798d0533b8d313e6d.s3tc.ctex"
+path.etc2="res://.godot/imported/wall_shelves_dungeon_texture.png-bda82757d5bc815798d0533b8d313e6d.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/wall_shelves_dungeon_texture.png"
-dest_files=["res://.godot/imported/wall_shelves_dungeon_texture.png-bda82757d5bc815798d0533b8d313e6d.s3tc.ctex"]
+dest_files=["res://.godot/imported/wall_shelves_dungeon_texture.png-bda82757d5bc815798d0533b8d313e6d.s3tc.ctex", "res://.godot/imported/wall_shelves_dungeon_texture.png-bda82757d5bc815798d0533b8d313e6d.etc2.ctex"]
 
 [params]
 

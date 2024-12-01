@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjcncwemxb5ws"
 path.s3tc="res://.godot/imported/trunk_small_B_dungeon_texture.png-82014430f804bdeaa0b0408dda5d8281.s3tc.ctex"
+path.etc2="res://.godot/imported/trunk_small_B_dungeon_texture.png-82014430f804bdeaa0b0408dda5d8281.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/trunk_small_B_dungeon_texture.png"
-dest_files=["res://.godot/imported/trunk_small_B_dungeon_texture.png-82014430f804bdeaa0b0408dda5d8281.s3tc.ctex"]
+dest_files=["res://.godot/imported/trunk_small_B_dungeon_texture.png-82014430f804bdeaa0b0408dda5d8281.s3tc.ctex", "res://.godot/imported/trunk_small_B_dungeon_texture.png-82014430f804bdeaa0b0408dda5d8281.etc2.ctex"]
 
 [params]
 

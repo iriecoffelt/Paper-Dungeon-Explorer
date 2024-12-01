@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cqqpefcgstgku"
 path.s3tc="res://.godot/imported/table_long_tablecloth_dungeon_texture.png-25258abf47878de4b7b110f662856a2a.s3tc.ctex"
+path.etc2="res://.godot/imported/table_long_tablecloth_dungeon_texture.png-25258abf47878de4b7b110f662856a2a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/table_long_tablecloth_dungeon_texture.png"
-dest_files=["res://.godot/imported/table_long_tablecloth_dungeon_texture.png-25258abf47878de4b7b110f662856a2a.s3tc.ctex"]
+dest_files=["res://.godot/imported/table_long_tablecloth_dungeon_texture.png-25258abf47878de4b7b110f662856a2a.s3tc.ctex", "res://.godot/imported/table_long_tablecloth_dungeon_texture.png-25258abf47878de4b7b110f662856a2a.etc2.ctex"]
 
 [params]
 

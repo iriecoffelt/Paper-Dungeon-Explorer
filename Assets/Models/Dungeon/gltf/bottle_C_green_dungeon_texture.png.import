@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c40r3mlh11tue"
 path.s3tc="res://.godot/imported/bottle_C_green_dungeon_texture.png-d5f3d937423033184f4c49c445cf2416.s3tc.ctex"
+path.etc2="res://.godot/imported/bottle_C_green_dungeon_texture.png-d5f3d937423033184f4c49c445cf2416.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/bottle_C_green_dungeon_texture.png"
-dest_files=["res://.godot/imported/bottle_C_green_dungeon_texture.png-d5f3d937423033184f4c49c445cf2416.s3tc.ctex"]
+dest_files=["res://.godot/imported/bottle_C_green_dungeon_texture.png-d5f3d937423033184f4c49c445cf2416.s3tc.ctex", "res://.godot/imported/bottle_C_green_dungeon_texture.png-d5f3d937423033184f4c49c445cf2416.etc2.ctex"]
 
 [params]
 

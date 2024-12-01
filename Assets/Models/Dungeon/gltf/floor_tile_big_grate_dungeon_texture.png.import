@@ -4,8 +4,9 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c7au64uugr24l"
 path.s3tc="res://.godot/imported/floor_tile_big_grate_dungeon_texture.png-ec0f19e93473c90ecb8b35fe0ea670d5.s3tc.ctex"
+path.etc2="res://.godot/imported/floor_tile_big_grate_dungeon_texture.png-ec0f19e93473c90ecb8b35fe0ea670d5.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +16,7 @@ generator_parameters={
 [deps]
 
 source_file="res://Assets/Models/Dungeon/gltf/floor_tile_big_grate_dungeon_texture.png"
-dest_files=["res://.godot/imported/floor_tile_big_grate_dungeon_texture.png-ec0f19e93473c90ecb8b35fe0ea670d5.s3tc.ctex"]
+dest_files=["res://.godot/imported/floor_tile_big_grate_dungeon_texture.png-ec0f19e93473c90ecb8b35fe0ea670d5.s3tc.ctex", "res://.godot/imported/floor_tile_big_grate_dungeon_texture.png-ec0f19e93473c90ecb8b35fe0ea670d5.etc2.ctex"]
 
 [params]
 
