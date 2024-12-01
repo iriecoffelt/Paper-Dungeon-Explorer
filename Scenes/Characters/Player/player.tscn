@@ -1,9 +1,10 @@
-[gd_scene load_steps=96 format=3 uid="uid://q6t4wrqrmalb"]
+[gd_scene load_steps=95 format=3 uid="uid://q6t4wrqrmalb"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_idley"]
 [ext_resource type="Texture2D" uid="uid://cdm02p4hqns34" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_rnhfj"]
-[ext_resource type="Script" path="res://Scripts/Resources/StatResource.cs" id="2_amasb"]
 [ext_resource type="Texture2D" uid="uid://dfjty10abxra4" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_001.png" id="2_aown5"]
+[ext_resource type="Resource" uid="uid://d03ovwuiv1r2" path="res://Resources/player_health_stat.tres" id="2_fsxc7"]
+[ext_resource type="Resource" uid="uid://cnxh8wow5wwrg" path="res://Resources/player_strength_stat.tres" id="3_5vv33"]
 [ext_resource type="Texture2D" uid="uid://b0x1w45idrisi" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_002.png" id="3_cfp18"]
 [ext_resource type="Texture2D" uid="uid://b5vd6tvb1r2r4" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_003.png" id="4_su25r"]
 [ext_resource type="Texture2D" uid="uid://crc84oy2p70qy" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_004.png" id="5_6a4a3"]
@@ -83,16 +84,6 @@
 [ext_resource type="Texture2D" uid="uid://gfroh75st6al" path="res://Assets/Sprites/Characters/Player/Dying/Dying_013.png" id="76_scmyk"]
 [ext_resource type="Texture2D" uid="uid://dtekvkmarbk4q" path="res://Assets/Sprites/Characters/Player/Dying/Dying_014.png" id="77_y0tlr"]
 [ext_resource type="Script" path="res://Scripts/Characters/Player/PlayerDeathState.cs" id="83_2h45r"]
-
-[sub_resource type="Resource" id="Resource_ricq4"]
-script = ExtResource("2_amasb")
-StatType = 0
-StatValue = 100.0
-
-[sub_resource type="Resource" id="Resource_50nwn"]
-script = ExtResource("2_amasb")
-StatType = 1
-StatValue = 3.0
 
 [sub_resource type="Animation" id="Animation_k1fmu"]
 resource_name = "Attack1"
@@ -256,10 +247,10 @@ size = Vector3(0.5, 0.5, 0.5)
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayerNode", "Sprite3DNode", "StateMachineNode", "HurtboxNode", "HitboxNode", "HitBoxShapeNode")]
 collision_layer = 2
 collision_mask = 5
-floor_max_angle = 1.55334
+floor_max_angle = 1.5708
 floor_snap_length = 0.2
 script = ExtResource("1_idley")
-stats = Array[Object]([SubResource("Resource_ricq4"), SubResource("Resource_50nwn")])
+stats = Array[Object]([ExtResource("2_fsxc7"), ExtResource("3_5vv33")])
 AnimationPlayerNode = NodePath("AnimationPlayer")
 Sprite3DNode = NodePath("Sprite3D")
 StateMachineNode = NodePath("StateMachine")
@@ -307,7 +298,7 @@ one_shot = true
 script = ExtResource("83_2h45r")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0774847, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0186308, -0.0261862, 0)
 shape = SubResource("CapsuleShape3D_q0xpo")
 
 [node name="Hitbox" type="Area3D" parent="."]
@@ -326,3 +317,9 @@ collision_mask = 4
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Hurtbox"]
 shape = SubResource("CapsuleShape3D_q0xpo")
+
+[node name="StairsAheadRayCast3D" type="RayCast3D" parent="."]
+unique_name_in_owner = true
+
+[node name="StairsBelowRayCast3D" type="RayCast3D" parent="."]
+unique_name_in_owner = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://jl8fp4t8nxcr"]
+[gd_scene load_steps=20 format=3 uid="uid://jl8fp4t8nxcr"]
 
 [ext_resource type="PackedScene" uid="uid://dixg104i7wd64" path="res://Assets/Models/Dungeon/gltf/floor_tile_small.gltf.glb" id="1_jlijx"]
 [ext_resource type="PackedScene" uid="uid://bxjo4mfc4xoyf" path="res://Assets/Models/Dungeon/gltf/wall.gltf.glb" id="2_2pcmj"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://cok7t4ek2a4e2" path="res://Assets/Models/Dungeon/gltf/barrier_colum_half.gltf.glb" id="16_5codl"]
 [ext_resource type="PackedScene" uid="uid://db3kaco82p4c4" path="res://Assets/Models/Dungeon/gltf/barrier_column.gltf.glb" id="17_qyh0m"]
 [ext_resource type="PackedScene" uid="uid://cvvyt5or744u8" path="res://Assets/Models/Dungeon/gltf/barrier_corner.gltf.glb" id="18_1jfan"]
+[ext_resource type="PackedScene" uid="uid://chhh7d4ms7n2p" path="res://Assets/Models/Dungeon/gltf/stairs_walled.gltf.glb" id="19_stiwx"]
 
 [node name="Tiles" type="Node3D"]
 
@@ -72,3 +73,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.43796, 0, 5.01289)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.28585, 0, 0)
 
 [node name="barrier_corner_gltf" parent="." instance=ExtResource("18_1jfan")]
+
+[node name="stairs_walled_gltf" parent="." instance=ExtResource("19_stiwx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8575, -1.30816, -15.9561)
