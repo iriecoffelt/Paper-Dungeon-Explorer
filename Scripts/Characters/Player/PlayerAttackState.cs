@@ -15,7 +15,7 @@ public partial class PlayerAttackState : PlayerState
 
     protected override void EnterState()
     {
-        characterNode.AnimationPlayerNode.Play(GameConstants.ANIM_ATTACK + comboCounter, -1, 1.75f);
+        characterNode.AnimationPlayerNode.Play(GameConstants.ANIM_ATTACK + comboCounter, -1, 2.5f);
         characterNode.AnimationPlayerNode.AnimationFinished += HandleAnimationFinished;
     }
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=3 uid="uid://bd1k4gdn2khjj"]
+[gd_scene load_steps=42 format=3 uid="uid://bd1k4gdn2khjj"]
 
 [ext_resource type="Script" path="res://Scripts/Levels/Main.cs" id="1_3373f"]
 [ext_resource type="PackedScene" uid="uid://q6t4wrqrmalb" path="res://Scenes/Characters/Player/player.tscn" id="2_6umsf"]
@@ -7,8 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://dxigh1emcb4m" path="res://Scenes/TouchControls/button_controls.tscn" id="4_54teb"]
 [ext_resource type="PackedScene" uid="uid://bkrw3a3nbvr3q" path="res://Scenes/Characters/Enemy/enemy.tscn" id="4_261io"]
 [ext_resource type="PackedScene" uid="uid://c228xuiy6ikg8" path="res://Scenes/TouchControls/touch_controls.tscn" id="5_a1fok"]
+[ext_resource type="Script" path="res://Scripts/UI/UIController.cs" id="6_jfefs"]
 [ext_resource type="Script" path="res://Scripts/General/Camera.cs" id="6_m6722"]
 [ext_resource type="PackedScene" uid="uid://s4ih023giy1k" path="res://Scenes/General/ui.tscn" id="7_w1uh4"]
+[ext_resource type="Script" path="res://Scripts/UI/UICanvasLayer.cs" id="8_7pr74"]
 [ext_resource type="Script" path="res://Scripts/Resources/StatResource.cs" id="10_usiku"]
 
 [sub_resource type="NavigationMesh" id="NavigationMesh_xcek1"]
@@ -243,13 +245,20 @@ grow_vertical = 0
 
 [node name="Move" type="Control" parent="Camera3D/CanvasLayer/HBoxContainer"]
 layout_mode = 2
+script = ExtResource("6_jfefs")
 
 [node name="TouchControls" parent="Camera3D/CanvasLayer/HBoxContainer/Move" instance=ExtResource("5_a1fok")]
+unique_name_in_owner = true
+script = ExtResource("8_7pr74")
 
 [node name="Buttons" type="Control" parent="Camera3D/CanvasLayer/HBoxContainer"]
 layout_mode = 2
+script = ExtResource("6_jfefs")
 
 [node name="ButtonControls" parent="Camera3D/CanvasLayer/HBoxContainer/Buttons" instance=ExtResource("4_54teb")]
+unique_name_in_owner = true
+script = ExtResource("8_7pr74")
+canvasLayer = 1
 
 [node name="Enemies" type="Node3D" parent="."]
 script = ExtResource("4_1xs1r")
