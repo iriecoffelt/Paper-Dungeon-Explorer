@@ -35,7 +35,8 @@ _subresources={
 "nodes": {
 "PATH:stairs_wood_decorated": {
 "generate/physics": true,
-"physics/layer": 0,
+"physics/mask": 0,
+"physics/physics_material_override": null,
 "physics/shape_type": 1
 }
 }

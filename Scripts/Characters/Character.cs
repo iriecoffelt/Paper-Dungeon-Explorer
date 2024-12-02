@@ -23,6 +23,10 @@ public abstract partial class Character : CharacterBody3D
     [Export] internal Area3D ChaseAreaNode { get; private set; }
     [Export] internal Area3D AttackAreaNode { get; private set; }
 
+    [ExportGroup("Movement")]
+    [Export] internal float JumpImpulse = 12.0f;
+    [Export] internal float Gravity = -30.0f;
+
     public Vector2 direction = new();
 
     public override void _Ready()

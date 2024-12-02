@@ -17,6 +17,7 @@ public class GameConstants
     public const string INPUT_MOVE_RIGHT = "MoveRight";
     public const string INPUT_DASH = "Dash";
     public const string INPUT_ATTACK = "Attack";
+    public const string INPUT_JUMP = "Jump";
 
     // Notification
     public const int NOTIFICATION_ENTER_STATE = 10241995;
