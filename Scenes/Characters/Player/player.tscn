@@ -248,7 +248,6 @@ size = Vector3(0.5, 0.5, 0.5)
 collision_layer = 2
 collision_mask = 13
 slide_on_ceiling = false
-floor_max_angle = 1.5708
 floor_snap_length = 0.2
 script = ExtResource("1_idley")
 stats = Array[Object]([ExtResource("2_fsxc7"), ExtResource("3_5vv33")])
@@ -263,6 +262,7 @@ HitBoxShapeNode = NodePath("Hitbox/CollisionShape3D")
 pixel_size = 0.0025
 texture_filter = 0
 texture = ExtResource("1_rnhfj")
+region_rect = Rect2(4.13312, 8.42095, 887.446, 731.296)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

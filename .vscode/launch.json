@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "/Applications/Godot4.3.app/Contents/MacOS/Godot",
+            "program": "D:/Program Files/Godot_v4.3-stable_mono_win64/GodotV4.3.exe",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole",
             "stopAtEntry": false,

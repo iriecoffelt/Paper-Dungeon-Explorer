@@ -29,5 +29,6 @@ public partial class EnemyReturnState : EnemyState
         }
 
         Move();
+        characterNode.ApplyCharacterGravity(delta);
     }
 }

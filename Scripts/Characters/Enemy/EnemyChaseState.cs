@@ -26,6 +26,7 @@ public partial class EnemyChaseState : EnemyState
     public override void _PhysicsProcess(double delta)
     {
         Move();
+        characterNode.ApplyCharacterGravity(delta);
     }
 
     private void HandleTimeout()

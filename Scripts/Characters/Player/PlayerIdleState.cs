@@ -9,6 +9,7 @@ public partial class PlayerIdleState : PlayerState
         {
             characterNode.StateMachineNode.SwitchState<PlayerMoveState>();
         }
+        characterNode.ApplyCharacterGravity(delta);
     }
 
     public override void _Input(InputEvent @event)

@@ -36,6 +36,7 @@ public partial class EnemyPatrolState : EnemyState
             return;
         }
         Move();
+        characterNode.ApplyCharacterGravity(delta);
     }
 
     private void HandleNavigationFinished()

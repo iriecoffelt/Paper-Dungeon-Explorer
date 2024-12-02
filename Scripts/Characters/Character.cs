@@ -24,14 +24,19 @@ public abstract partial class Character : CharacterBody3D
     [Export] internal Area3D AttackAreaNode { get; private set; }
 
     [ExportGroup("Movement")]
-    [Export] internal float JumpImpulse = 12.0f;
-    [Export] internal float Gravity = -30.0f;
+    [Export] public int JumpImpulse  { get; set; } = 30;
 
     public Vector2 direction = new();
+    internal Vector3 targetVelocity = Vector3.Zero;
 
     public override void _Ready()
     {
         HurtboxNode.AreaEntered += HandleHurtboxEntered;
+    }
+
+    public override void _PhysicsProcess(double delta)
+    {
+        ApplyCharacterGravity(delta);
     }
 
     private void HandleHurtboxEntered(Area3D area)
@@ -63,5 +68,29 @@ public abstract partial class Character : CharacterBody3D
     public void ToggleHitbox(bool flag)
     {
         HitBoxShapeNode.Disabled = flag;
+    }
+
+    public void PlayerJump()
+    {
+        if (IsOnFloor() && Input.IsActionJustPressed(GameConstants.INPUT_JUMP))
+        {
+            targetVelocity.Y = JumpImpulse;
+        }
+    }
+
+    public void CheckJump()
+    {
+        if (Velocity.Y > 0)
+        {
+            targetVelocity.Y = 0;
+        }
+    }
+
+    public void ApplyCharacterGravity(double delta)
+    {
+        if (!IsOnFloor())
+        {
+            targetVelocity.Y -= (float)(GameConstants.PLAYER_GRAVITY * delta);   
+        }
     }
 }

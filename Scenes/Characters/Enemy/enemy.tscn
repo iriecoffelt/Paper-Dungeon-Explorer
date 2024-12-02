@@ -280,6 +280,8 @@ size = Vector3(0.5, 0.5, 0.5)
 [node name="Enemy" type="CharacterBody3D" node_paths=PackedStringArray("AnimationPlayerNode", "Sprite3DNode", "StateMachineNode", "HurtboxNode", "HitboxNode", "HitBoxShapeNode", "Agent3DNode", "ChaseAreaNode", "AttackAreaNode")]
 collision_layer = 4
 collision_mask = 3
+axis_lock_linear_y = true
+floor_stop_on_slope = false
 script = ExtResource("1_n1i0e")
 stats = Array[Object]([SubResource("Resource_syebe"), SubResource("Resource_nuaa0")])
 AnimationPlayerNode = NodePath("AnimationPlayer")

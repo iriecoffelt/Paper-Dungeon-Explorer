@@ -36,7 +36,7 @@ _subresources={
 "PATH:wall_half_endcap_sloped": {
 "generate/physics": true,
 "physics/layer": 0,
-"physics/shape_type": 2
+"physics/shape_type": 1
 }
 }
 }
