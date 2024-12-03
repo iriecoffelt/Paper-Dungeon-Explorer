@@ -79,19 +79,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.8575, -1.30816, -15.9561)
 [node name="stairs_wood_decorated_gltf" parent="." instance=ExtResource("3_32pif")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.5208, 0, 0.55188)
 
-[node name="scaffold_stairs_gltf" parent="."]
-_import_path = NodePath("")
-unique_name_in_owner = false
-process_mode = 0
-process_priority = 0
-process_physics_priority = 0
-process_thread_group = 0
-physics_interpolation_mode = 0
-auto_translate_mode = 0
-editor_description = ""
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.7751, 0, 7.66327)
-script = null
-
 [node name="stairs_gltf" parent="." instance=ExtResource("21_vtm0v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.5906, 0, 2.47534)
 

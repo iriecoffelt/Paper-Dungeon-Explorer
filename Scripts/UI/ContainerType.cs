@@ -5,5 +5,7 @@ public enum ContainerType
     Victory,
     Defeat,
     Stats,
-    Reward
+    Reward,
+    Move,
+    Buttons
 }

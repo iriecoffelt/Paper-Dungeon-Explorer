@@ -24,10 +24,12 @@ public abstract partial class Character : CharacterBody3D
     [Export] internal Area3D AttackAreaNode { get; private set; }
 
     [ExportGroup("Movement")]
-    [Export] public int JumpImpulse  { get; set; } = 30;
+    [Export] public int JumpImpulse  { get; set; } = 5;
 
     public Vector2 direction = new();
     internal Vector3 targetVelocity = Vector3.Zero;
+
+    internal float speed = 10f;
 
     public override void _Ready()
     {
@@ -37,6 +39,7 @@ public abstract partial class Character : CharacterBody3D
     public override void _PhysicsProcess(double delta)
     {
         ApplyCharacterGravity(delta);
+        Velocity = Velocity.Lerp(targetVelocity, speed);
     }
 
     private void HandleHurtboxEntered(Area3D area)
@@ -74,15 +77,7 @@ public abstract partial class Character : CharacterBody3D
     {
         if (IsOnFloor() && Input.IsActionJustPressed(GameConstants.INPUT_JUMP))
         {
-            targetVelocity.Y = JumpImpulse;
-        }
-    }
-
-    public void CheckJump()
-    {
-        if (Velocity.Y > 0)
-        {
-            targetVelocity.Y = 0;
+            targetVelocity.Y = Math.Max(Velocity.Y + JumpImpulse * 0.1f, JumpImpulse);
         }
     }
 

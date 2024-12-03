@@ -18,17 +18,11 @@ public partial class PlayerMoveState : PlayerState
         characterNode.ApplyCharacterGravity(delta);
         characterNode.MoveAndSlide();
         characterNode.Flip();
-        characterNode.CheckJump();
     }
 
     public override void _Input(InputEvent @event)
     {
         CheckForAttackInput();
-
-        if (Input.IsActionJustPressed(GameConstants.INPUT_DASH)) 
-        {
-            characterNode.StateMachineNode.SwitchState<PlayerDashState>();
-        }
     }
 
     protected override void EnterState()

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dxigh1emcb4m"]
+[gd_scene load_steps=4 format=3 uid="uid://dxigh1emcb4m"]
 
 [ext_resource type="Texture2D" uid="uid://bx2qgsodh8u6k" path="res://Assets/Sprites/Characters/Player/Slashing/Slashing_007.png" id="1_ms6x2"]
-[ext_resource type="Texture2D" uid="uid://ufhumg6un1r0" path="res://Assets/Sprites/Characters/Player/Sliding/Sliding_004.png" id="2_55qm8"]
+[ext_resource type="Texture2D" uid="uid://u5etsy7yovep" path="res://Assets/Sprites/Characters/Player/Kicking/Kicking_005.png" id="3_d7pn4"]
+[ext_resource type="Texture2D" uid="uid://c8lu21uku5xje" path="res://Assets/Sprites/UI/UI Element 5.png" id="4_pi2r4"]
 
 [node name="ButtonControls" type="CanvasLayer"]
 
@@ -23,8 +24,14 @@ scale = Vector2(0.15, 0.15)
 texture_normal = ExtResource("1_ms6x2")
 action = "Attack"
 
-[node name="Dash" type="TouchScreenButton" parent="Control"]
-position = Vector2(-118, -117)
+[node name="Jump" type="TouchScreenButton" parent="Control"]
+position = Vector2(-119, -117)
 scale = Vector2(0.15, 0.15)
-texture_normal = ExtResource("2_55qm8")
-action = "Dash"
+texture_normal = ExtResource("3_d7pn4")
+action = "PlayerJump"
+
+[node name="Pause" type="TouchScreenButton" parent="Control"]
+position = Vector2(-18, -586)
+scale = Vector2(0.2, 0.2)
+texture_normal = ExtResource("4_pi2r4")
+action = "Pause"
