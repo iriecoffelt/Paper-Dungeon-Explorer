@@ -7,7 +7,7 @@ public partial class PlayerMoveState : PlayerState
     
     public override void _PhysicsProcess(double delta)
     {
-        if (characterNode.direction == Vector2.Zero)
+        if (characterNode.direction == Vector2.Zero && characterNode.IsOnFloor())
         {
             characterNode.StateMachineNode.SwitchState<PlayerIdleState>();
             return;
@@ -15,7 +15,6 @@ public partial class PlayerMoveState : PlayerState
         characterNode.PlayerJump();
         characterNode.Velocity = new(characterNode.direction.X, characterNode.targetVelocity.Y, characterNode.direction.Y);
         characterNode.Velocity *= speed;
-        characterNode.ApplyCharacterGravity(delta);
         characterNode.MoveAndSlide();
         characterNode.Flip();
     }

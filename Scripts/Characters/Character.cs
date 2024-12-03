@@ -24,7 +24,7 @@ public abstract partial class Character : CharacterBody3D
     [Export] internal Area3D AttackAreaNode { get; private set; }
 
     [ExportGroup("Movement")]
-    [Export] public int JumpImpulse  { get; set; } = 5;
+    [Export] public int JumpImpulse  { get; set; } = 3;
 
     public Vector2 direction = new();
     internal Vector3 targetVelocity = Vector3.Zero;

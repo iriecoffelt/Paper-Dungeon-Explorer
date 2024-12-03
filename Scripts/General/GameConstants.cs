@@ -9,6 +9,7 @@ public class GameConstants
     public const string ANIM_DASH = "Dash";
     public const string ANIM_ATTACK = "Attack";
     public const string ANIM_DEATH = "Death";
+    public const string ANIM_JUMP = "Jump";
 
     // Inputs
     public const string INPUT_MOVE_FORWARD = "MoveForward";
@@ -25,4 +26,5 @@ public class GameConstants
 
     //Variables
     public const float PLAYER_GRAVITY = 9.8f;
+    public const float JUMP_IMPULSE = 5f;
 }

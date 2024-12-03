@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=3 uid="uid://q6t4wrqrmalb"]
+[gd_scene load_steps=88 format=3 uid="uid://q6t4wrqrmalb"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player.cs" id="1_idley"]
 [ext_resource type="Texture2D" uid="uid://cdm02p4hqns34" path="res://Assets/Sprites/Characters/Player/Idle Blinking/Idle Blinking_000.png" id="1_rnhfj"]
@@ -203,12 +203,29 @@ tracks/0/keys = {
 "values": [ExtResource("1_rnhfj")]
 }
 
+[sub_resource type="Animation" id="Animation_rywpc"]
+resource_name = "Jump"
+step = 0.0833333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite3D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0833333, 0.166786, 0.25, 0.333333, 0.416667, 0.5, 0.583333, 0.666667, 0.75, 0.833333, 0.916666),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("38_xq0oh"), ExtResource("39_d2711"), ExtResource("40_dyn7i"), ExtResource("41_6d1ne"), ExtResource("42_wt1rv"), ExtResource("43_wl3mv"), ExtResource("44_anwyh"), ExtResource("45_xn0sl"), ExtResource("46_mqcxy"), ExtResource("47_ffkvf"), ExtResource("48_7od5v"), ExtResource("49_68dxu")]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_b58y6"]
 _data = {
 "Attack1": SubResource("Animation_k1fmu"),
 "Attack2": SubResource("Animation_2m1ut"),
 "Death": SubResource("Animation_wn8qc"),
 "Idle": SubResource("Animation_t8iu4"),
+"Jump": SubResource("Animation_rywpc"),
 "Move": SubResource("Animation_7mn40"),
 "RESET": SubResource("Animation_k50hc")
 }
@@ -247,7 +264,7 @@ libraries = {
 
 [node name="StateMachine" parent="." node_paths=PackedStringArray("currentState", "states") instance=ExtResource("38_81otm")]
 currentState = NodePath("IdleState")
-states = [NodePath("IdleState"), NodePath("MoveState"), NodePath("AttackState"), NodePath("DeathState")]
+states = [NodePath("IdleState"), NodePath("MoveState"), NodePath("AttackState"), NodePath("DeathState"), NodePath("")]
 
 [node name="IdleState" type="Node" parent="StateMachine"]
 script = ExtResource("32_c601i")
